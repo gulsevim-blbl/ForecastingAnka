@@ -1,0 +1,39 @@
+/* .forecasting {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+@font-face {
+    font-family: 'metropolis';
+    src: url("./fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+  }
+  
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    transform: translateY(-30px);
+    font-family: Metropolis, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .header nav {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 15px;
+    }
+  
+    .header .title {
+      position: static; /* Varsayılan konuma dön */
+      transform: none; /* Varsayılan konuma dön */
+      margin-top: 10px; /* Ekleme: daha iyi bir görünüm için */
+    }
+  
+    .button {
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

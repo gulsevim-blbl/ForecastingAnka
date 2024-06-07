@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'metropolis';
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; 
+  margin: 10px;
+  font-family: Metropolis, sans-serif;
+}
+
+.actions, .subscribe, .save {
+  display: flex;   
+}
+
+.action-button {
+  border: none;
+  color: #0079B8;
+  background-color: #FAFAFA;
+  font-weight: bold;
+  height: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.subscribe-button {
+  border-radius: 3px;
+  border: 1px solid #0079B8;
+  color: #0079B8;
+  background: white;
+  font-weight: bold;
+  height: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.subscribe-button:hover {
+  color: white;
+  background: #0079B8;
+  border: 1px solid #0079B8;
+}
+
+.saveReport {
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  background: #0079B8;
+  font-weight: bold;
+  height: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}

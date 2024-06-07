@@ -1,0 +1,89 @@
+.filterbar-container {
+    display: flex;
+    align-items: center;
+    padding: 5px; 
+    flex-wrap: wrap;
+    margin-top: -10px; /*Geri dön buraya*/
+}
+
+.filter-button {
+    border-radius: 3px;
+    border: 1px solid #0079B8;
+    color: #0079B8;
+    background: white;
+    margin: 10px;
+}
+
+.filter-button:hover {
+    color: white;
+    background: #0079B8;
+    border: 1px solid #0079B8;
+}
+
+.timeInverval, .forecastDuration, .historicalData, .category {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 10px;
+    color: #313131;
+    font-family: Metropolis, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 10px;
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.timeInverval p, .forecastDuration p, .historicalData p, .category p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-link {
+    text-decoration: none;
+    color: #313131;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9A9A9A; 
+    margin-top: 5px; 
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px; 
+    font-family: Metropolis, sans-serif;
+}
+
+.update {
+    border-radius: 3px;
+    font-family: Metropolis;
+    border: 1px solid #565656;
+    color: #565656;
+    background: white;
+    opacity: 0.4;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.update:hover {
+    color: white;
+    background: #565656;
+    border: 1px solid #565656;
+}
+
+.reset {
+    border: none;
+    color: #0079B8;
+    background: #FAFAFA;
+    font-weight: bold;
+    height: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

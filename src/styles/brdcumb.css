@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+}
+
+.brdcrumb {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.custom-breadcrumb a {
+    color: #0079B8;
+}
+
+/* @media screen and (max-width: 768px) {
+    .brdcrumb {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-breadcrumb a,
+    .custom-breadcrumb,
+    .ant-breadcrumb-link {
+        font-size: 10px; 
+    }
+} */
