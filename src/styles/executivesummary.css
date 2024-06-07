@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+  }
+  
+
+.executivesummary {
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .executivesummary .ant-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+  }
+  
+  .executivesummary .ant-col {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    flex-grow: 1;
+    max-width: none;
+    
+  }
+  
+  .card-title {
+    color: #000;
+    font-family: Metropolis, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-weight: bold;
+    
+  }
+  
+  .ant-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+    border: 1px solid #D7D7D7;
+    height: 180px;
+  }
+  
+  .ant-card-body {
+    flex: 1;
+  }
+  
+  .card-content1, .card-content2, .card-content3 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+  .price{
+    display: flex;
+    gap: 10px;
+    color: #48545D;
+    font-family: Metropolis;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .increaserate {
+
+    color: #C92100;
+    font-family: Metropolis;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; 
+
+    .anticon-arrow-up {
+        color: #C92100;
+    }
+
+  }
+  .cost{
+    color: #333;
+    font-family: Metropolis;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5px;
+
+    .info {
+    color: #777;
+    font-family: Metropolis;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 138.462% */
+    }
+
+    .days{
+        color: #C92100;
+        font-family: Metropolis;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+    }
+ }
+ 
+    
+
+  
+  /* .card-content2, .card-content3 {
+    color: #333;
+    font-family: Metropolis, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  .card-content2 > .ant-card-body, .card-content3 > .ant-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  

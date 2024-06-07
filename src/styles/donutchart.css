@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+}
+
+
+.donutchart {
+  display: flex;
+  }
+  .chart{
+    width: 160px; 
+    margin-top: -15px;
+
+  }
+  .donutchart-text {
+    color: #000;
+    font-family: Metropolis;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+
+  .price{
+    color: #333;
+    font-family: Metropolis;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+  }
+  
+  .useddata{
+    color: #565656;
+    text-align: center;
+    margin-right: 30px;
+    font-family: Metropolis;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+  }
