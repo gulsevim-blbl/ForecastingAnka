@@ -1,6 +1,7 @@
 import React from 'react';
 import { DualAxes } from '@ant-design/plots';
 import { linearRegression } from 'simple-statistics';
+import "../styles/graphic.css"
 
 const Graphic = () => {
   // Mevcut veriler
@@ -110,7 +111,7 @@ const Graphic = () => {
    const predictedData: { time: string; value: number; type: string }[] = [];
    const types = Array.from(new Set(uvBillData.map(item => item.type))); // Tüm unique type'ları al
    const months = ['2021-08', '2021-09', '2021-10', '2021-11']; // Tahmin edilecek aylar
-   
+    
    // Her bir type için tahmin verilerini oluştur
    types.forEach(type => {
      months.forEach(month => {
@@ -121,7 +122,7 @@ const Graphic = () => {
        predictedData.push({ time: month, value: predictedValue, type: type });
      });
    });
- 
+  
    // Grafik konfigürasyonu
    const config = {
      xField: 'time',
@@ -154,9 +155,16 @@ const Graphic = () => {
        },
      ],
    };
- 
+  
    // Grafik bileşeni
-   return <DualAxes {...config} />;
+   return (
+     <div className="graphic-container">
+       <DualAxes {...config} />
+       <div className="predicted-data-background">
+        <p className='text'>Forecasted Values</p>
+       </div>
+     </div>
+   );
  };
  
  export default Graphic;

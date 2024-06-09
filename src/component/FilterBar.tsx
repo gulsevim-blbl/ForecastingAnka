@@ -1,9 +1,13 @@
-import React from 'react';
-import { Button, Menu } from 'antd';
+import React, { useState } from 'react';
+import { Button, Dropdown, Space, Collapse, Radio, Select, Input } from 'antd';
 import { FilterOutlined, DownOutlined, SmileOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Dropdown, Space } from 'antd';
+// import { Dropdown, Space } from 'antd';
 import "../styles/filterbar.css";
+
+
+const { Panel } = Collapse;
+const { Option } = Select;
 
 const items: MenuProps['items'] = [
     {
@@ -31,22 +35,165 @@ const items: MenuProps['items'] = [
     },
 ];
 
-const dropdownMenu = {
-    items: [
-        { key: '1', label: 'Upsize' },
-        { key: '2', label: 'Downsize' },
-        { key: '3', label: 'Terminate' }
-    ]
-};
+
 
 const FilterBar = () => {
+
+    const [isFilterOpen, setIsFilterOpen] = useState(false);
+    const [growthFactorType, setGrowthFactorType] = useState('standard');
+    
+    const toggleFilterMenu = () => {
+        setIsFilterOpen(!isFilterOpen);
+    };
+
+
     return (
         <div className='filterbar-container'>
-            <Dropdown menu={dropdownMenu} trigger={['click']}>
-                <Button className="filter-button">
-                    <FilterOutlined />FILTERS
-                </Button>
-            </Dropdown>
+            
+            <Button className="filter-button" onClick={toggleFilterMenu}>
+                <FilterOutlined />FILTERS
+            </Button>
+            <div className={`filter-panel ${isFilterOpen ? 'open' : ''}`}>
+                <div className="top">
+                        <div className="button-container">
+                            <p className='title-filter'>Filters</p>
+                            <div className="clear">
+                                 <Button className='clear-button'>Clear</Button>
+                            </div>
+                            <div className="cancel">
+                                 <Button className='cancel-button'>Cancel Report</Button>
+                            </div>
+                            <div className="apply">
+                                <Button className='apply-button'>Appley</Button>
+                            </div>
+                        </div>
+                </div>
+                <div className="filters-area">
+                        <div className="Budget">
+                            <p>Budget </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                        Quarterly AWS Budget <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Accounts">
+                            <p>Accounts </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    CloudHealth, CloudHealth EDS, CloudHealth MGT, Prod +4 more   <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Services">
+                            <p>Services </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Amazon API, Other, CloudHealth Starburt, Amazon Doc DB  +3 more   <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Billing Accounts">
+                            <p>Services </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Select Billing Accounts <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Charge Type">
+                            <p>Charge Type </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Select Charge Type <DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Months">
+                            <p>Months </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Select Months<DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Regions">
+                            <p>Regions </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Select Regions<DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Inclusions">
+                            <p>Inclusions </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Commitment discounts, Anomalies, Policies, Alerts,  APIs +2<DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Chart Type">
+                            <p>Chart Type </p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Stacked Bar (default)<DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="X Axis">
+                            <p>X Axis</p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Months<DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div className="Y Axis">
+                            <p>Y Axis</p>
+                            <Dropdown menu={{ items }}>
+                                <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                    Cost ($)<DownOutlined />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+                </div>
+                <div className="growth-factor">
+
+                </div>
+            </div>
             <div className="timeInverval">
                 <p>Time Inverval </p>
                 <Dropdown menu={{ items }}>

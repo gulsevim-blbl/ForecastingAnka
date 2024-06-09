@@ -29,7 +29,9 @@ const ForecastingDashboard = () => {
           </Card>   
       </div>
       <div className="table">
-          <Table/>
+          <Card className='table-card'>
+              <Table/>
+          </Card>
       </div>
     </div>
   )

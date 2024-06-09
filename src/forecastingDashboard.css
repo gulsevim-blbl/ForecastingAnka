@@ -11,9 +11,9 @@
   
 .title{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 10px;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     font-family: Metropolis, sans-serif;
 }
 
@@ -24,9 +24,19 @@
 
 
 .graphic-card {
-  width: 100%;
+  margin-left: 10px;
+  width: 99%;
   overflow: auto;
-  height: 600px !important;
+  height: 540px !important;
+}
+
+.table-card{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 99%;
+  overflow: auto;
+  height: 470px !important;
 }
 
 

@@ -1,0 +1,35 @@
+.predicted-data-background {
+    position: absolute;
+    top: 90px; 
+    right: 80px; 
+    background: linear-gradient(91deg, rgba(116, 202, 227, 0.55) 0.76%, rgba(229, 242, 255, 0.70) 99.52%);
+    z-index: 1; 
+    width: 400px;
+    height: 380px;
+    
+  }
+  
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #737373;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+}
+  /* Telefon boyutu için */
+@media only screen and (max-width: 600px) {
+    .predicted-data-background {
+      display: none; 
+    }
+  }
+  
+  /* Tablet boyutu için */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .predicted-data-background {
+        display: none;
+    }
+  }
+  

@@ -25,7 +25,6 @@
     "react-scripts": "5.0.1",
     "scikit-learn": "^0.1.0",
     "simple-statistics": "^7.8.3",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -51,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }
