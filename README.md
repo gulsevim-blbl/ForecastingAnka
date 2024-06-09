@@ -9,10 +9,11 @@
 ## Forecasting Dashboard3
 ![ForecatingDashboard3](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/b8229621-e84c-4492-89db-5646087a2da8)
 ## FilterPanel Side Menu
-![FilterPanel](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/bc76d70b-d49f-408f-84f9-4af8df8f51c2)
+![FilterPanel](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/07424d34-5cf3-477c-af40-bff4a0b5e241)
 ## Growth Factor
-![growFaktorAçık](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/36351cde-2afd-4bc8-a9f7-689308547268)
+![growFaktorAçık](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/3a201b93-c22c-427a-af03-5ec90238851d)
 ## Growth Factor > standart
-![standart](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/2eaba8df-c0c3-485b-a298-9386ccc11c76)
+![standart](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/05e854ab-9e4b-4fbe-945d-6394025991a9)
 ## Growth Factor >advanced
-![advanced](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/b9e6bcf3-b10c-47b5-bc8e-c21b28d4365c)
+![advanced](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/50b6f03f-f4fd-4503-8407-a3b117f34384)
+
