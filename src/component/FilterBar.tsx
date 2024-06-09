@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Button, Dropdown, Space, Collapse, Radio, Select, Input } from 'antd';
+import { Button, Dropdown, Space, Collapse, Radio } from 'antd';
 import { FilterOutlined, DownOutlined, SmileOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-// import { Dropdown, Space } from 'antd';
+import type { RadioChangeEvent } from 'antd/lib/radio';
 import "../styles/filterbar.css";
 
 
+/**Collapse yapısı için */
 const { Panel } = Collapse;
-const { Option } = Select;
 
 const items: MenuProps['items'] = [
     {
@@ -39,13 +39,35 @@ const items: MenuProps['items'] = [
 
 const FilterBar = () => {
 
+    /**Side Menu */
     const [isFilterOpen, setIsFilterOpen] = useState(false);
-    const [growthFactorType, setGrowthFactorType] = useState('standard');
+
     
     const toggleFilterMenu = () => {
         setIsFilterOpen(!isFilterOpen);
     };
 
+    /**Radio Button  */
+    const [value, setValue] = useState(1);
+
+    const onChange = (e: RadioChangeEvent) => {
+        console.log('radio checked', e.target.value);
+        setValue(e.target.value);
+    };
+    
+    // const [isClicked, setIsClicked] = useState(false);
+
+    // const handleCollapseClick = () => {
+    //     setIsClicked(!isClicked);
+    // };
+
+    /** Collapse Panel */
+    const [activeKey, setActiveKey] = useState<string[]>([]);
+
+    const handleCollapseClick = () => {
+        setActiveKey(activeKey.length === 0 ? ['1'] : []);
+    };
+    
 
     return (
         <div className='filterbar-container'>
@@ -191,7 +213,67 @@ const FilterBar = () => {
                         </div>
                 </div>
                 <div className="growth-factor">
-
+                    <Collapse
+                        activeKey={activeKey}
+                        onChange={(key) => setActiveKey(key as string[])}
+                        className={activeKey.length ? 'custom-collapse clicked' : 'custom-collapse'}
+                    >
+                        <Panel
+                            header={
+                                <span className="panel-header" onClick={handleCollapseClick}>
+                                    Growth Factor <InfoCircleOutlined />
+                                </span>
+                            }
+                            key="1"
+                        >
+                             <Radio.Group onChange={onChange} value={value} className='cutom-radio-group'>
+                                <Radio className='custom-radio' value={1}>Standard</Radio>
+                                <Radio className='custom-radio' value={2}>Advanced</Radio>
+                            </Radio.Group>
+                            {value === 1 && (
+                                <div className='standart-content'> 
+                                    <div className="Duration">
+                                        <p>Duration</p>
+                                         <Dropdown menu={{ items }}>
+                                        <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                            <Space>
+                                                 Annually<DownOutlined />
+                                            </Space>
+                                        </a>
+                                         </Dropdown>
+                                    </div>
+                                    <div className="growthfactor">
+                                        <p>Growth Factor %</p>
+                                         <Dropdown menu={{ items }}>
+                                        <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                            <Space className='space'>
+                                                 %
+                                            </Space>
+                                        </a>
+                                         </Dropdown>
+                                         <p className='percentage'>
+                                          <span className='span'>5%</span> System estimated value. <a href="#More">Learn More</a>
+                                         </p>
+                                    </div>
+                                </div>
+                            )}
+                            {value === 2 && (
+                                <div className='advanced-content'>
+                                    {/* Show content for Advanced */}
+                                    <div className="type ">
+                                         <p>Type  <InfoCircleOutlined /> </p>
+                                         <Dropdown menu={{ items }}>
+                                             <a className='dropdown-link' onClick={(e) => e.preventDefault()}>
+                                                 <Space className='advanced-space'>
+                                                    Select type of growth factor   <DownOutlined />
+                                                 </Space>
+                                             </a>
+                                         </Dropdown>
+                                    </div>
+                                </div>
+                            )}
+                        </Panel>
+                    </Collapse>
                 </div>
             </div>
             <div className="timeInverval">
