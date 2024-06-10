@@ -3,11 +3,11 @@
 # Project Pictures #
 
 ## Forecasting Dashboard1
-![Forecastingdashboard1 resim](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/d0cbdf94-677e-4022-b061-096bf8155037)
+![dh1](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/a7cd4d1a-1422-4fb0-929f-7536060677ab)
 ## Forecasting Dashboard2
-![Forecastingdashboard2 resim](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/420438b2-386f-49e1-a976-c1e5839ddae0)
+![dh2](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/d4f409d6-b418-4a01-9fb1-e9d020933198)
 ## Forecasting Dashboard3
-![ForecatingDashboard3](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/b8229621-e84c-4492-89db-5646087a2da8)
+![dh3](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/048137ee-6eb2-4418-8f90-62142d48294d)
 ## FilterPanel Side Menu
 ![FilterPanel](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/07424d34-5cf3-477c-af40-bff4a0b5e241)
 ## Growth Factor
