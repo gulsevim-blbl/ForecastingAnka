@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+  }
+  
+
+.comparesummary {
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .comparesummary .ant-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+  }
+  
+  .comparesummary .ant-col {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    flex-grow: 1;
+    max-width: none;
+    
+  }
+  
+  .card-title {
+    color: #000;
+    font-family: Metropolis, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    font-weight: bold;
+    
+  }
+  
+  .comparesummary .ant-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+    border: 1px solid #D7D7D7;
+    height: 170px;
+  }
+  
+  .ant-card-body {
+    flex: 1;
+  }
+  
+  .card-content1, .card-content2, .card-content3 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+  .compare-price{
+    display: flex;
+    gap: 10px;
+    color: #000;
+    font-family: Metropolis;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .compare-cost{
+    color: #333;
+    font-family: Metropolis;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+ }
+ 

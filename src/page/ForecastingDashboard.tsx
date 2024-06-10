@@ -7,6 +7,7 @@ import ExecutiveSummary from '../component/ExecutiveSummary';
 import Graphic from '../component/Graphic';
 import { Card } from 'antd';
 import Table from '../component/Table';
+
 const ForecastingDashboard = () => {
   return (
     <div className='forecasting'>

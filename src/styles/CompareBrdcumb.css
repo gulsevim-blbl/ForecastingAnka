@@ -3,14 +3,10 @@
     src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
 }
 
-.brdcrumb {
+
+.compare-brdcrumb {
     display: flex;
     flex: 1;
     margin: 10px;
-    font-weight: bold;
-}
-
-.custom-breadcrumb  {
-    color: #0079B8 !important;
-    font-family: 'Metropolis', sans-serif; 
+    font-weight: 400;
 }

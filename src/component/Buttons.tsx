@@ -4,9 +4,8 @@ import { DownOutlined } from '@ant-design/icons';
 import "../styles/buttons.css";
 
 const menuItems = [
-    { key: '1', label: 'Action 1' },
-    { key: '2', label: 'Action 2' },
-    { key: '3', label: 'Action 3' }
+    { key: '1', label: 'Save Forecasts' },
+    { key: '2', label: 'View Saved Forecasts' }
 ];
 
 const Buttons = () => {

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'metropolis';
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format('opentype');
+}
+
+.comparebutton-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px; 
+  margin: 20px;
+  font-family: Metropolis, sans-serif;
+}
+
+.compare-actions, .applygrowthfactor {
+  display: flex;   
+}
+
+
+
+.compare-actions{
+  border-radius: 3px;
+  border: 1px solid #0079B8;
+  color: #0079B8;
+  background: white;
+  font-weight: bold;
+  height: 30px;
+  /* padding: 10px; */
+  text-transform: uppercase;
+}
+
+.applygrowthfactor-button{
+    border: none;
+    color: #0079B8;
+    background: #FAFAFA;
+    font-weight: bold;
+    height: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+

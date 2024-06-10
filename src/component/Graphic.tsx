@@ -1,128 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { DualAxes } from '@ant-design/plots';
 import { linearRegression } from 'simple-statistics';
 import "../styles/graphic.css"
 
-const Graphic = () => {
-  // Mevcut veriler
-  const uvBillData = [
-    { "time": "2020-11", "value": 250, "type": "Compute Engine-VMs" },
-    { "time": "2020-11", "value": 30, "type": "Compute Engine-Storage" },
-    { "time": "2020-11", "value": 10, "type": "Credit - Substained Usage Discount" },
-    { "time": "2020-11", "value": 10, "type": "Credit - Others" },
-    { "time": "2020-11", "value": 10, "type": "Container - Small Clusters" },
-    { "time": "2020-11", "value": 0, "type": "BigQuery - Analysis" },
-    { "time": "2020-11", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2020-11", "value": 0, "type": "Cloud SQL - Other" },
-    { "time": "2020-11", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2020-11", "value": 0, "type": "DataFlow - Vcpu" },
-    { "time": "2020-11", "value": 10, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2020-12", "value": 250, "type": "Compute Engine-VMs" },
-    { "time": "2020-12", "value": 50, "type": "Compute Engine-Storage" },
-    { "time": "2020-12", "value": 10, "type": "Credit - Substained Usage Discount" },
-    { "time": "2020-12", "value": 20, "type": "Credit - Others" },
-    { "time": "2020-12", "value": 0, "type": "Container - Small Clusters" },
-    { "time": "2020-12", "value": 0, "type": "BigQuery - Analysis" },
-    { "time": "2020-12", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2020-12", "value": 0, "type": "Cloud SQL - Other" },
-    { "time": "2020-12", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2020-12", "value": 0, "type": "DataFlow - Vcpu" },
-    { "time": "2020-12", "value": 10, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-01", "value": 250, "type": "Compute Engine-VMs" },
-    { "time": "2021-01", "value": 30, "type": "Compute Engine-Storage" },
-    { "time": "2021-01", "value": 20, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-01", "value": 0, "type": "Credit - Others" },
-    { "time": "2021-01", "value": 10, "type": "Container - Small Clusters" },
-    { "time": "2021-01", "value": 20, "type": "BigQuery - Analysis" },
-    { "time": "2021-01", "value": 20, "type": "Compute Engine - Licenses" },
-    { "time": "2021-01", "value": 10, "type": "Cloud SQL - Other" },
-    { "time": "2021-01", "value": 15, "type": "Compute Engine - Licenses" },
-    { "time": "2021-01", "value": 20, "type": "DataFlow - Vcpu" },
-    { "time": "2021-01", "value": 0, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-02", "value": 250, "type": "Compute Engine-VMs" },
-    { "time": "2021-02", "value": 50, "type": "Compute Engine-Storage" },
-    { "time": "2021-02", "value": 30, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-02", "value": 20, "type": "Credit - Others" },
-    { "time": "2021-02", "value": 40, "type": "Container - Small Clusters" },
-    { "time": "2021-02", "value": 15, "type": "BigQuery - Analysis" },
-    { "time": "2021-02", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2021-02", "value": 0, "type": "Cloud SQL - Other" },
-    { "time": "2021-02", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2021-02", "value": 8, "type": "DataFlow - Vcpu" },
-    { "time": "2021-02", "value": 3, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-03", "value": 280, "type": "Compute Engine-VMs" },
-    { "time": "2021-03", "value": 30, "type": "Compute Engine-Storage" },
-    { "time": "2021-03", "value": 10, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-03", "value": 10, "type": "Credit - Others" },
-    { "time": "2021-03", "value": 15, "type": "Container - Small Clusters" },
-    { "time": "2021-03", "value": 10, "type": "BigQuery - Analysis" },
-    { "time": "2021-03", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2021-03", "value": 10, "type": "Cloud SQL - Other" },
-    { "time": "2021-03", "value": 0, "type": "Compute Engine - Licenses" },
-    { "time": "2021-03", "value": 20, "type": "DataFlow - Vcpu" },
-    { "time": "2021-03", "value": 30, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-04", "value": 250, "type": "Compute Engine-VMs" },
-    { "time": "2021-04", "value": 60, "type": "Compute Engine-Storage" },
-    { "time": "2021-04", "value": 40, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-04", "value": 10, "type": "Credit - Others" },
-    { "time": "2021-04", "value": 20, "type": "Container - Small Clusters" },
-    { "time": "2021-04", "value": 10, "type": "BigQuery - Analysis" },
-    { "time": "2021-04", "value": 30, "type": "Compute Engine - Licenses" },
-    { "time": "2021-04", "value": 10, "type": "Cloud SQL - Other" },
-    { "time": "2021-04", "value": 10, "type": "Compute Engine - Licenses" },
-    { "time": "2021-04", "value": 10, "type": "DataFlow - Vcpu" },
-    { "time": "2021-04", "value": 10, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-05", "value": 270, "type": "Compute Engine-VMs" },
-    { "time": "2021-05", "value": 40, "type": "Compute Engine-Storage" },
-    { "time": "2021-05", "value": 10, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-05", "value": 10, "type": "Credit - Others" },
-    { "time": "2021-05", "value": 20, "type": "Container - Small Clusters" },
-    { "time": "2021-05", "value": 40, "type": "BigQuery - Analysis" },
-    { "time": "2021-05", "value": 20, "type": "Compute Engine - Licenses" },
-    { "time": "2021-05", "value": 15, "type": "Cloud SQL - Other" },
-    { "time": "2021-05", "value": 15, "type": "Compute Engine - Licenses" },
-    { "time": "2021-05", "value": 10, "type": "DataFlow - Vcpu" },
-    { "time": "2021-05", "value": 10, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-06", "value": 240, "type": "Compute Engine-VMs" },
-    { "time": "2021-06", "value": 50, "type": "Compute Engine-Storage" },
-    { "time": "2021-06", "value": 10, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-06", "value": 40, "type": "Credit - Others" },
-    { "time": "2021-06", "value": 10, "type": "Container - Small Clusters" },
-    { "time": "2021-06", "value": 20, "type": "BigQuery - Analysis" },
-    { "time": "2021-06", "value": 22, "type": "Compute Engine - Licenses" },
-    { "time": "2021-06", "value": 10, "type": "Cloud SQL - Other" },
-    { "time": "2021-06", "value": 25, "type": "Compute Engine - Licenses" },
-    { "time": "2021-06", "value": 15, "type": "DataFlow - Vcpu" },
-    { "time": "2021-06", "value": 0, "type": "Compute Engine - CPU - Nvidia Tesla P4s" },
-    { "time": "2021-07", "value": 350, "type": "Compute Engine-VMs" },
-    { "time": "2021-07", "value": 50, "type": "Compute Engine-Storage" },
-    { "time": "2021-07", "value": 10, "type": "Credit - Substained Usage Discount" },
-    { "time": "2021-07", "value": 20, "type": "Credit - Others" },
-    { "time": "2021-07", "value": 20, "type": "Container - Small Clusters" },
-    { "time": "2021-07", "value": 40, "type": "BigQuery - Analysis" },
-    { "time": "2021-07", "value": 15, "type": "Compute Engine - Licenses" },
-    { "time": "2021-07", "value": 60, "type": "Cloud SQL - Other" },
-    { "time": "2021-07", "value": 40, "type": "Compute Engine - Licenses" },
-    { "time": "2021-07", "value": 20, "type": "DataFlow - Vcpu" },
-    { "time": "2021-07", "value": 10, "type": "Compute Engine - CPU - Nvidia Tesla P4s" }
-  ];
+interface DataItem {
+  time: string;
+  value: number;
+  type: string;
+}
 
+const Graphic = () => {
+ 
    // Tahmin edilen verilerin oluşturulması için lineer regresyon kullanımı
-   const predictedData: { time: string; value: number; type: string }[] = [];
-   const types = Array.from(new Set(uvBillData.map(item => item.type))); // Tüm unique type'ları al
-   const months = ['2021-08', '2021-09', '2021-10', '2021-11']; // Tahmin edilecek aylar
+   const [uvBillData, setUvBillData] = useState<DataItem[]>([]);
+  const [predictedData, setPredictedData] = useState<DataItem[]>([]);
+
+  useEffect(() => {
+    // Fetch data from the JSON file
+    fetch('/api/dataGraphic.json')
+      .then(response => response.json())
+      .then((data: { uvBillData: DataItem[] }) => {
+        setUvBillData(data.uvBillData);
+        generatePredictedData(data.uvBillData);
+      });
+  }, []);
+
+  const generatePredictedData = (data: DataItem[]) => {
+    const types: string[] = Array.from(new Set(data.map(item => item.type))); // Get all unique types
+    const months: string[] = ['2021-08', '2021-09', '2021-10', '2021-11']; // Months to predict
     
-   // Her bir type için tahmin verilerini oluştur
-   types.forEach(type => {
-     months.forEach(month => {
-       const filteredData = uvBillData.filter(item => item.type === type && item.time < month);
-       const yValues = filteredData.map(item => item.value);
-       const { m, b } = linearRegression([yValues]); // yValues dizisini bir dizi içine yerleştirin
-       const predictedValue = m * new Date(month).getTime() + b;
-       predictedData.push({ time: month, value: predictedValue, type: type });
-     });
-   });
-  
+    const predictedDataArray: DataItem[] = [];
+    types.forEach(type => {
+      months.forEach(month => {
+        const filteredData = data.filter(item => item.type === type && item.time < month);
+        const yValues: number[] = filteredData.map(item => item.value);
+        const { m, b } = linearRegression([yValues]); // Put yValues array into another array
+        const predictedValue = m * new Date(month).getTime() + b;
+        predictedDataArray.push({ time: month, value: predictedValue, type: type });
+      });
+    });
+    setPredictedData(predictedDataArray);
+  };
    // Grafik konfigürasyonu
    const config = {
      xField: 'time',

@@ -1,11 +1,11 @@
 .predicted-data-background {
     position: absolute;
     top: 90px; 
-    right: 80px; 
+    right: 90px; 
     background: linear-gradient(91deg, rgba(116, 202, 227, 0.55) 0.76%, rgba(229, 242, 255, 0.70) 99.52%);
     z-index: 1; 
-    width: 400px;
-    height: 380px;
+    width: 380px;
+    height: 390px;
     
   }
   
