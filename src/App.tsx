@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import "./App.css"
-import ForecastingDashboard from './ForecastingDashboard';
+import ForecastingDashboard from  './page/ForecastingDashboard';
 function App() {
   return ( 
     <div className="app">
