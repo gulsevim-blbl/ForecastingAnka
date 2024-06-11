@@ -89,6 +89,9 @@ const CompareGrafic = () => {
   return (
     <div className='comparegrafic'>
       <Column {...config} />
+      <div className="predicted-data-background-two">
+        <p className='text-two'>Forecasted Values</p>
+       </div>
     </div>
   );
 };

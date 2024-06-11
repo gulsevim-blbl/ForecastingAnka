@@ -17,14 +17,31 @@
     height: 100%;
   }
   
-  
-  .compare-brdcumb .compaire-graphic-card{
-    /* margin-left: 10px;
-    width: 99%;
+  .compaire-graphic-card{
+    margin-left: 10px;
+    width: 99% !important; 
     overflow: auto;
-    height: 540px !important; */
-  }
+    }
 
+
+
+  .export-compare {
+    border-radius: 3px;
+    font-family: Metropolis;
+    border: 1px solid #0079B8;
+    color: #0079B8;
+    background: white;
+    margin: 10px;
+    height: 25px;
+    padding: 10px;
+  }
+  
+  .export-compare:hover {
+    color: white;
+    background: #0079B8;
+    border: 1px solid #0079B8;
+  }
+  
 @media (max-width: 768px) {
   
     .header .compare-title {
