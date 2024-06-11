@@ -1,0 +1,30 @@
+.details-table {
+    /* margin: 20px;
+    padding: 20px; */
+    border-collapse: collapse;
+    background: #FAFAFA;
+  }
+
+  .details-table table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .details-table th, .details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    box-shadow: 2px 2px 5px rgba(99, 87, 87, 0.1); 
+  }
+  
+  .details-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #000;
+    border-radius: 3px 0px 0px 0px;
+    border: 1px solid #CCC;
+    background: #FAFAFA;
+    
+  }
+  

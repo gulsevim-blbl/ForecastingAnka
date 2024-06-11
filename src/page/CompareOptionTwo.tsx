@@ -2,6 +2,7 @@ import React from 'react'
 import "./compareoptiontwo.css"
 import { Card } from 'antd';
 import SelectForecastsTwo from '../component/SelectForecastsTwo';
+import DetailsOptions from '../component/DetailsOptions';
 
 const CompareOptionTwo = () => {
   return (
@@ -19,7 +20,7 @@ const CompareOptionTwo = () => {
                 <SelectForecastsTwo/>
                 <div className="option-two-graphic">
                     <Card  className="option-two-graphic-card">
-
+                          <DetailsOptions/>
                     </Card>
         
                 </div>
