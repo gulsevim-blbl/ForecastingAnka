@@ -1,0 +1,59 @@
+.compare-option-two {
+  margin-left: 20px; 
+}
+.content{
+
+  display: flex;
+  
+  gap:40px
+  
+}
+.optionone-title {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #565656;
+  font-family: Metropolis;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 75% */
+}
+
+.info-text {
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.info-text p {
+  color: #000;
+  font-family: Metropolis;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  
+}
+
+
+
+.option-table-graphic.ant-card {
+    width: 100%;
+    height: 100%;
+  }
+
+.option-table-graphic-card{
+    margin-top: 50px;
+    height: 600px;
+    width: 1000px;
+}
+
+
+
+/* .option-two-graphic .ant-card {
+  width: 100%;
+  height: 100%;
+}
+.option-two-graphic {
+  margin-top: 50px;
+} */
+

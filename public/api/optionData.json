@@ -1,0 +1,166 @@
+{
+    "optionData":[
+        {
+            "Account":"Multiple Accounts",
+            "Services": "EC2 Transger",
+            "Budget": "Revenue 2023, HR",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "5%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": " EC2 Compute",
+            "Budget": "Revenue 2023, HR",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "5%",
+            "Inclusions":"Committent Discounts",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "Indirect EC2",
+            "Budget": "Quarterly AWS Budget",
+            "Historical Data": "Past 7 months",
+            "Growth Factor": "5%",
+            "Inclusions":"Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "All Services",
+            "Budget": "FY 2023, HR +1",
+            "Historical Data": "Past 1 year",
+            "Growth Factor": "5%",
+            "Inclusions":"Anomalies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "XYZ Services",
+            "Budget": "Labs India",
+            "Historical Data": "Past 16 weeks",
+            "Growth Factor": "5%",
+            "Inclusions":"Committent,Discounts,Anomalies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "XYZ Services",
+            "Budget": "Revenue 2023, HR",
+            "Historical Data": "Past 6 months",
+            "Growth Factor": "4%",
+            "Inclusions":"Policies,Committent Discounts",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "XYZ Services",
+            "Budget": "Quarterly AWS Budget",
+            "Historical Data": "Past 6 months",
+            "Growth Factor": "7%",
+            "Inclusions":"Committent Discounts,Anomalies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"CloudHealth EDS",
+            "Services": "XYZ Services",
+            "Budget": "Quarterly AWS Budget",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "4%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"CloudHealth EDS",
+            "Services": "All Services",
+            "Budget": "UX Team Budget",
+            "Historical Data": "Past 6 months",
+            "Growth Factor": "4%",
+            "Inclusions":"Anomalies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"CloudHealth Druid",
+            "Services": "All Services",
+            "Budget": "Monthly Team Budget",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "7%",
+            "Inclusions":"Anomalies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"CloudHealth EDS",
+            "Services": "All Services",
+            "Budget": "Regional Expenses",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "3.5%",
+            "Inclusions":"Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "All Services",
+            "Budget": "Regional Costs",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "8%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "All Services",
+            "Budget": "Monthly Team Budget",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "10%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts EDS",
+            "Services": "All Services",
+            "Budget": "HR Budget, Finance 23",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "5%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "All Services",
+            "Budget": "Revenue 2023, HR",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "5%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"CloudHealth EDS",
+            "Services": "All Services",
+            "Budget": "Revenue 2023, HR",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "11%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "All Services",
+            "Budget": "Monthly Team Budget",
+            "Historical Data": "Past 4 months",
+            "Growth Factor": "4%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        },
+        {
+            "Account":"Multiple Accounts",
+            "Services": "All Services",
+            "Budget": "Monthly Team Budget",
+            "Historical Data": "Past 6 months",
+            "Growth Factor": "2%",
+            "Inclusions":"Anomalies,Policies",
+            "Creation Date":"05/10/2023"
+        }
+    ]
+}
