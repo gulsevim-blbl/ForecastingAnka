@@ -1,82 +1,134 @@
-[
-    {
-      "name": "London",
-      "月份": "Jan.",
-      "月均降雨量": 18.9
-    },
-    {
-      "name": "London",
-      "月份": "Feb.",
-      "月均降雨量": 28.8
-    },
-    {
-      "name": "London",
-      "月份": "Mar.",
-      "月均降雨量": 39.3
-    },
-    {
-      "name": "London",
-      "月份": "Apr.",
-      "月均降雨量": 81.4
-    },
-    {
-      "name": "London",
-      "月份": "May",
-      "月均降雨量": 47
-    },
-    {
-      "name": "London",
-      "月份": "Jun.",
-      "月均降雨量": 20.3
-    },
-    {
-      "name": "London",
-      "月份": "Jul.",
-      "月均降雨量": 24
-    },
-    {
-      "name": "London",
-      "月份": "Aug.",
-      "月均降雨量": 35.6
-    },
-    {
-      "name": "Berlin",
-      "月份": "Jan.",
-      "月均降雨量": 12.4
-    },
-    {
-      "name": "Berlin",
-      "月份": "Feb.",
-      "月均降雨量": 23.2
-    },
-    {
-      "name": "Berlin",
-      "月份": "Mar.",
-      "月均降雨量": 34.5
-    },
-    {
-      "name": "Berlin",
-      "月份": "Apr.",
-      "月均降雨量": 99.7
-    },
-    {
-      "name": "Berlin",
-      "月份": "May",
-      "月均降雨量": 52.6
-    },
-    {
-      "name": "Berlin",
-      "月份": "Jun.",
-      "月均降雨量": 35.5
-    },
-    {
-      "name": "Berlin",
-      "月份": "Jul.",
-      "月均降雨量": 37.4
-    },
-    {
-      "name": "Berlin",
-      "月份": "Aug.",
-      "月均降雨量": 42.4
-    }
+{
+  "compareData": [
+    { "time": "2022-09", "value": 250, "type": "EC2 -Compute" },
+    { "time": "2022-09", "value": 50, "type": "S3-Storage" },
+    { "time": "2022-09", "value": 10, "type": "Amazon Elastic MapReduce" },
+    { "time": "2022-09", "value": 10, "type": "S3 - Api " },
+    { "time": "2022-09", "value": 10, "type": "EC2-Transfer" },
+    { "time": "2022-09", "value": 10, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2022-09", "value": 20, "type": "AWS Premium Support" },
+    { "time": "2022-09", "value": 30, "type": "EBS -Storage" },
+    { "time": "2022-09", "value": 40, "type": "RDS-Compute" },
+    { "time": "2022-09", "value": 40, "type": "CloudWatch Log Groups" },
+    { "time": "2022-09", "value": 10, "type": "RDS -I/O" },
+    { "time": "2022-09", "value": 250, "type": "Compute Engine-VMs" },
+
+    { "time": "2022-10", "value": 50, "type": "EC2 -Compute" },
+    { "time": "2022-10", "value": 10, "type": "S3-Storage" },
+    { "time": "2022-10", "value": 20, "type": "Amazon Elastic MapReduce" },
+    { "time": "2022-10", "value": 0, "type": "S3 - Api " },
+    { "time": "2022-10", "value": 0, "type": "EC2-Transfer" },
+    { "time": "2022-10", "value": 0, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2022-10", "value": 40, "type": "AWS Premium Support" },
+    { "time": "2022-10", "value": 20, "type": "EBS -Storage" },
+    { "time": "2022-10", "value": 10, "type": "RDS-Compute" },
+    { "time": "2022-10", "value": 10, "type": "CloudWatch Log Groups" },
+    { "time": "2022-10", "value": 10, "type": "RDS -I/O" },
+    { "time": "2022-10", "value": 10, "type": "Compute Engine-VMs" },
+
+    { "time": "2022-11", "value": 250, "type": "EC2 -Compute" },
+    { "time": "2022-11", "value": 30, "type": "S3-Storage" },
+    { "time": "2022-11", "value": 40, "type": "Amazon Elastic MapReduce" },
+    { "time": "2022-11", "value": 13, "type": "S3 - Api " },
+    { "time": "2022-11", "value": 132, "type": "EC2-Transfer" },
+    { "time": "2022-11", "value": 230, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2022-11", "value": 23, "type": "AWS Premium Support" },
+    { "time": "2022-11", "value": 1, "type": "EBS -Storage" },
+    { "time": "2022-11", "value": 0, "type": "RDS-Compute" },
+    { "time": "2022-11", "value": 10, "type": "CloudWatch Log Groups" },
+    { "time": "2022-11", "value": 10, "type": "RDS -I/O" },
+    { "time": "2022-11", "value": 10, "type": "Compute Engine-VMs" },
+
+    { "time": "2022-12", "value": 50, "type": "EC2 -Compute" },
+    { "time": "2022-12", "value": 30, "type": "S3-Storage" },
+    { "time": "2022-12", "value": 40, "type": "Amazon Elastic MapReduce" },
+    { "time": "2022-12", "value": 13, "type": "S3 - Api " },
+    { "time": "2022-12", "value": 132, "type": "EC2-Transfer" },
+    { "time": "2022-12", "value": 230, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2022-12", "value": 23, "type": "AWS Premium Support" },
+    { "time": "2022-12", "value": 1, "type": "EBS -Storage" },
+    { "time": "2022-12", "value": 0, "type": "RDS-Compute" },
+    { "time": "2022-12", "value": 10, "type": "CloudWatch Log Groups" },
+    { "time": "2022-12", "value": 10, "type": "RDS -I/O" },
+    { "time": "2022-12", "value": 10, "type": "Compute Engine-VMs" },
+
+    { "time": "2023-01", "value": 50, "type": "EC2 -Compute" },
+    { "time": "2023-01", "value": 30, "type": "S3-Storage" },
+    { "time": "2023-01", "value": 40, "type": "Amazon Elastic MapReduce" },
+    { "time": "2023-01", "value": 13, "type": "S3 - Api " },
+    { "time": "2023-01", "value": 132, "type": "EC2-Transfer" },
+    { "time": "2023-01", "value": 230, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2023-01", "value": 23, "type": "AWS Premium Support" },
+    { "time": "2023-01", "value": 1, "type": "EBS -Storage" },
+    { "time": "2023-01", "value": 0, "type": "RDS-Compute" },
+    { "time": "2023-01", "value": 10, "type": "CloudWatch Log Groups" },
+    { "time": "2023-01", "value": 10, "type": "RDS -I/O" },
+    { "time": "2023-01", "value": 10, "type": "Compute Engine-VMs" },
+
+    { "time": "2023-02", "value": 150, "type": "EC2 -Compute" },
+    { "time": "2023-02", "value": 20, "type": "S3-Storage" },
+    { "time": "2023-02", "value": 30, "type": "Amazon Elastic MapReduce" },
+    { "time": "2023-02", "value": 53, "type": "S3 - Api " },
+    { "time": "2023-02", "value": 242, "type": "EC2-Transfer" },
+    { "time": "2023-02", "value": 230, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2023-02", "value": 23, "type": "AWS Premium Support" },
+    { "time": "2023-02", "value": 1, "type": "EBS -Storage" },
+    { "time": "2023-02", "value": 0, "type": "RDS-Compute" },
+    { "time": "2023-02", "value": 10, "type": "CloudWatch Log Groups" },
+    { "time": "2023-02", "value": 10, "type": "RDS -I/O" },
+    { "time": "2023-02", "value": 10, "type": "Compute Engine-VMs" },
+
+    { "time": "2023-03", "value": 50, "type": "EC2 -Compute" },
+    { "time": "2023-03", "value": 40, "type": "S3-Storage" },
+    { "time": "2023-03", "value": 30, "type": "Amazon Elastic MapReduce" },
+    { "time": "2023-03", "value": 33, "type": "S3 - Api " },
+    { "time": "2023-03", "value": 42, "type": "EC2-Transfer" },
+    { "time": "2023-03", "value": 30, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2023-03", "value": 23, "type": "AWS Premium Support" },
+    { "time": "2023-03", "value": 10, "type": "EBS -Storage" },
+    { "time": "2023-03", "value": 5, "type": "RDS-Compute" },
+    { "time": "2023-03", "value": 4, "type": "CloudWatch Log Groups" },
+    { "time": "2023-03", "value": 11, "type": "RDS -I/O" },
+    { "time": "2023-03", "value": 14, "type": "Compute Engine-VMs" },
+
+    { "time": "2023-04", "value": 60, "type": "EC2 -Compute" },
+    { "time": "2023-04", "value": 10, "type": "S3-Storage" },
+    { "time": "2023-04", "value": 15, "type": "Amazon Elastic MapReduce" },
+    { "time": "2023-04", "value": 20, "type": "S3 - Api " },
+    { "time": "2023-04", "value": 22, "type": "EC2-Transfer" },
+    { "time": "2023-04", "value": 8, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2023-04", "value": 43, "type": "AWS Premium Support" },
+    { "time": "2023-04", "value": 0, "type": "EBS -Storage" },
+    { "time": "2023-04", "value": 5, "type": "RDS-Compute" },
+    { "time": "2023-04", "value": 4, "type": "CloudWatch Log Groups" },
+    { "time": "2023-04", "value": 11, "type": "RDS -I/O" },
+    { "time": "2023-04", "value": 14, "type": "Compute Engine-VMs" },
+
+    { "time": "2023-05", "value": 70, "type": "EC2 -Compute" },
+    { "time": "2023-05", "value": 20, "type": "S3-Storage" },
+    { "time": "2023-05", "value": 15, "type": "Amazon Elastic MapReduce" },
+    { "time": "2023-05", "value": 10, "type": "S3 - Api " },
+    { "time": "2023-05", "value": 12, "type": "EC2-Transfer" },
+    { "time": "2023-05", "value": 8, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2023-05", "value": 35, "type": "AWS Premium Support" },
+    { "time": "2023-05", "value": 10, "type": "EBS -Storage" },
+    { "time": "2023-05", "value": 5, "type": "RDS-Compute" },
+    { "time": "2023-05", "value": 7, "type": "CloudWatch Log Groups" },
+    { "time": "2023-05", "value": 11, "type": "RDS -I/O" },
+    { "time": "2023-05", "value": 14, "type": "Compute Engine-VMs" },
+
+    { "time": "2023-06", "value": 20, "type": "EC2 -Compute" },
+    { "time": "2023-06", "value": 10, "type": "S3-Storage" },
+    { "time": "2023-06", "value": 5, "type": "Amazon Elastic MapReduce" },
+    { "time": "2023-06", "value": 4, "type": "S3 - Api " },
+    { "time": "2023-06", "value": 4, "type": "EC2-Transfer" },
+    { "time": "2023-06", "value": 2, "type": "EC2'- NAT Gateway Transfer" },
+    { "time": "2023-06", "value": 6, "type": "AWS Premium Support" },
+    { "time": "2023-06", "value": 7, "type": "EBS -Storage" },
+    { "time": "2023-06", "value": 8, "type": "RDS-Compute" },
+    { "time": "2023-06", "value": 0, "type": "CloudWatch Log Groups" },
+    { "time": "2023-06", "value": 9, "type": "RDS -I/O" },
+    { "time": "2023-06", "value": 3, "type": "Compute Engine-VMs" }
   ]
+}
+                                              
