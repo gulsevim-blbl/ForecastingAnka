@@ -16,4 +16,13 @@
 ![standart](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/05e854ab-9e4b-4fbe-945d-6394025991a9)
 ## Growth Factor >advanced
 ![advanced](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/50b6f03f-f4fd-4503-8407-a3b117f34384)
-
+## Governance > Compare
+![tıklama](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/7c6b6478-d040-441b-9dae-a1b8d828cf86)
+## Compare Dashboard1
+![compareDashboard](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/205a8852-6638-4c4e-8607-a8b4c0a162c6)
+## Compare Dashboard2
+![compareDashboard2](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/70e35dcc-4f2f-4295-a7c3-70fc96e1f499)
+## Actions
+![actions](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/64765750-dbf9-4450-ac27-262f778afebd)
+## Compare Options
+![compareOption](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/db50cdf5-e42a-4183-8041-79c515fc0edd)
