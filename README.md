@@ -25,4 +25,7 @@
 ## Actions
 ![actions](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/64765750-dbf9-4450-ac27-262f778afebd)
 ## Compare Options
+### can select max 3 data and go to next page
 ![compareOption](https://github.com/gulsevim-blbl/ForecastingAnka/assets/73358343/db50cdf5-e42a-4183-8041-79c515fc0edd)
+
+
